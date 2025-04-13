@@ -18,6 +18,18 @@ pageRef = '/tags'
 weight = 30
 
 [module]
-  [module.hugoVersion]
-    extended = false
-    min = "0.116.0"
+[module.hugoVersion]
+extended = false
+min = "0.116.0"
+
+[[module.imports]]
+path = 'github.com/davidsneighbour/hugo-modules/modules/hooks'
+
+
+[params.dnb]
+[params.dnb.hooks]
+[params.dnb.hooks.items]
+[params.dnb.hooks.items.debugging]
+[[params.dnb.hooks.items.debugging.content-start]]
+cached = false
+file = 'hello-world'
